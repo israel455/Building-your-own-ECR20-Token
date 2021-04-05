@@ -1,17 +1,17 @@
 pragma solidity 0.6.6;
 
 // ----------------------------------------------------------------------------
-// 'GGMToken' token contract
+// 'LIONToken' token contract
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
+// Deployed to : 0x3686147100B998EE570b7D9bB13f594B8b3D8dB9
+// Symbol      : LION
+// Name        : LN token
 // Total supply: 100000000
 // Decimals    : 18
 //
 // Enjoy.
 //
-// (c) by Ahiwe Onyebuchi Valentine.
+// (c) by Adeyemo israel olumide.
 // ----------------------------------------------------------------------------
 
 
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract GGMToken is ERC20Interface, Owned, SafeMath {
+contract LIONToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "CCM";
-        name = "CCMToken";
+        symbol = "LN";
+        name = "LIONToken";
         decimals = 0;
         _totalSupply = 100000000;
-        balances[0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58] = _totalSupply;
-        emit Transfer(address(0), 0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58, _totalSupply);
+        balances[0x3686147100B998EE570b7D9bB13f594B8b3D8dB9] = _totalSupply;
+        emit Transfer(address(0), 0x3686147100B998EE570b7D9bB13f594B8b3D8dB9, _totalSupply);
     }
 
 
